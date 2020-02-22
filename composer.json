@@ -1,0 +1,45 @@
+{
+  "name": "haruncpi/laravel-option-framework",
+  "description": "Manage your laravel application's dynamic settings in one place with various supported input types",
+  "license": "cc-by-4.0",
+  "keywords": [
+    "laravel",
+    "option",
+    "framework"
+  ],
+  "type": "library",
+  "authors": [
+    {
+      "name": "MD.HARUN-UR-RASHID",
+      "email": "harun.cox@gmail.com"
+    }
+  ],
+  "minimum-stability": "dev",
+  "prefer-stable": true,
+  "require": {
+    "php": ">=5.6"
+  },
+  "autoload": {
+    "files": [
+      "src/helpers.php"
+    ],
+    "psr-4": {
+      "Haruncpi\\LaravelOptionFramework\\": "src"
+    }
+  },
+  "scripts": {
+    "phpunit": "phpunit"
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Haruncpi\\LaravelOptionFramework\\ServiceProvider"
+      ]
+    }
+  },
+  "config": {
+    "preferred-install": "dist",
+    "sort-packages": true,
+    "optimize-autoloader": true
+  }
+}
